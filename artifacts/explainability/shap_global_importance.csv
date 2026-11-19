@@ -1,0 +1,83 @@
+feature,mean_absolute_shap
+categorical__addr_state_WV,0.49053094
+categorical__purpose_credit_card,0.32085523
+categorical__purpose_small_business,0.27195433
+categorical__addr_state_OK,0.23586217
+categorical__addr_state_CT,0.22524336
+categorical__addr_state_OR,0.21463655
+numeric__loan_amnt,0.19479635
+categorical__purpose_vacation,0.18217164
+categorical__addr_state_GA,0.18202522
+numeric__dti_n,0.1732564
+numeric__fico_n,0.17154941
+categorical__addr_state_MT,0.16790982
+categorical__purpose_moving,0.15589426
+numeric__revenue,0.15544485
+categorical__addr_state_NJ,0.1404148
+categorical__addr_state_CO,0.13618678
+categorical__purpose_house,0.131924
+categorical__addr_state_ME,0.13020599
+categorical__addr_state_NE,0.12063526
+categorical__home_ownership_n_MORTGAGE,0.1145196
+categorical__addr_state_NH,0.10098349
+categorical__addr_state_TX,0.10091561
+categorical__addr_state_NV,0.096132606
+categorical__addr_state_NM,0.09506587
+categorical__purpose_other,0.09343133
+categorical__addr_state_RI,0.09038923
+categorical__addr_state_UT,0.09035108
+categorical__emp_length_NI,0.087371215
+categorical__addr_state_AZ,0.082181804
+categorical__emp_length_3 years,0.07051294
+categorical__addr_state_KS,0.0703504
+categorical__emp_length_< 1 year,0.06929487
+categorical__addr_state_WA,0.063467786
+categorical__addr_state_AR,0.06045426
+categorical__purpose_medical,0.059905328
+categorical__emp_length_9 years,0.05267639
+categorical__emp_length_4 years,0.052250996
+categorical__addr_state_AL,0.05200997
+categorical__purpose_home_improvement,0.040387984
+categorical__addr_state_LA,0.038765542
+categorical__emp_length_8 years,0.03600575
+categorical__emp_length_6 years,0.03593487
+categorical__emp_length_10+ years,0.035272315
+categorical__addr_state_DE,0.032395
+categorical__addr_state_MD,0.030380482
+categorical__emp_length_2 years,0.028883798
+categorical__addr_state_NC,0.02721868
+categorical__purpose_debt_consolidation,0.027205257
+categorical__emp_length_1 year,0.027060958
+categorical__home_ownership_n_OWN,0.026589729
+categorical__home_ownership_n_RENT,0.02600255
+categorical__addr_state_NY,0.024587698
+categorical__addr_state_FL,0.024574425
+categorical__addr_state_MI,0.024142828
+categorical__addr_state_SC,0.022857178
+categorical__purpose_car,0.022584248
+categorical__addr_state_CA,0.021561569
+categorical__addr_state_ND,0.02116493
+categorical__emp_length_7 years,0.019589111
+categorical__addr_state_SD,0.019033637
+categorical__addr_state_IN,0.0184551
+categorical__addr_state_MS,0.016531676
+categorical__addr_state_TN,0.014666039
+categorical__addr_state_HI,0.014302875
+categorical__addr_state_KY,0.01398302
+categorical__addr_state_VA,0.013826601
+categorical__addr_state_IL,0.012887343
+categorical__emp_length_5 years,0.012783755
+categorical__addr_state_MA,0.011257866
+categorical__addr_state_MN,0.009975607
+categorical__addr_state_DC,0.009308959
+categorical__purpose_major_purchase,0.008015305
+categorical__addr_state_MO,0.0070842193
+categorical__addr_state_WY,0.0061566476
+categorical__addr_state_OH,0.0052352957
+categorical__addr_state_PA,0.0037969642
+categorical__addr_state_WI,0.0036543142
+numeric__experience_c,0.0
+categorical__home_ownership_n_infrequent_sklearn,0.0
+categorical__purpose_renewable_energy,0.0
+categorical__addr_state_AK,0.0
+categorical__addr_state_VT,0.0

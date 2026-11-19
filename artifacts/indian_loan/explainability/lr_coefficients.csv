@@ -1,0 +1,53 @@
+feature,coefficient,note
+cibil_score,-1.322901098254688,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+collateral_provided_Yes,-0.4165940014910401,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+monthly_income_inr,-0.379431205838874,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+state_Bihar,-0.26774932587593586,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+marital_status_Widowed,-0.15748514912065179,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+state_Kerala,-0.15424804838318343,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+gender_Female,-0.14240584449808386,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+gender_Male,-0.11539469184651606,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+employment_type_Salaried - PSU,-0.11151072527374692,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+state_Gujarat,-0.10842246935284351,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+credit_utilization_ratio_pct,-0.10453108543123636,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+employment_type_Salaried - Private,-0.08983514348908546,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+employment_type_Self-Employed Professional,-0.07716292928702585,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+state_Maharashtra,-0.07585017211948929,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+loan_purpose_Home Renovation,-0.07522011501965366,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+interest_rate_offered_pct,-0.06819162328205583,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+loan_purpose_Education,-0.06707831126268624,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+state_Madhya Pradesh,-0.06216031574499273,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+existing_loans_count,-0.05380481088626716,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+loan_purpose_Medical Emergency,-0.03965504746814274,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+state_Karnataka,-0.03131363213121983,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+city_tier_Tier 2,-0.027932387553081067,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+state_Telangana,-0.027062793383917823,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+loan_purpose_Vehicle Purchase,-0.005175422727106864,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+city_tier_Tier 3,-0.004114314643217492,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+bank_account_vintage_years,-0.001859152867538546,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+marital_status_Married,0.001322847336023678,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+loan_purpose_Debt Consolidation,0.0018823940708048523,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+loan_tenure_months,0.011185227704167024,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+marital_status_Single,0.012234770479043453,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+state_Punjab,0.013372985076405405,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+city_tier_Tier 1,0.023284885116711004,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+age,0.035740308598609376,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+loan_purpose_Wedding,0.04032799464416588,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+loan_purpose_Business Expansion,0.058268837360793566,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+employment_type_Salaried - Government,0.06719075373920214,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+state_Delhi NCR,0.06766571693310855,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+loan_purpose_Personal Expense,0.07788785332223289,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+state_Rajasthan,0.07865949837514022,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+state_Haryana,0.09508904150048855,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+state_Uttar Pradesh,0.09614717236077074,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+state_Tamil Nadu,0.10909724214892601,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+state_Andhra Pradesh,0.11996266611477978,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+marital_status_Divorced,0.13516571422602025,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+state_West Bengal,0.13805061740237887,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+num_credit_inquiries_last_6m,0.14624711613991578,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+employment_type_Business Owner,0.20255622723105113,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+gender_Other,0.24903871926501311,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+loan_amount_requested_inr,0.26228627899156526,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+late_payments_last_12m,0.307069034357962,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+existing_emi_monthly_inr,0.3266732443905234,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.
+collateral_provided_No,0.4078321844114713,Coefficient in standardised+OHE feature space. Numeric features are StandardScaler-scaled. Association only — not causal.

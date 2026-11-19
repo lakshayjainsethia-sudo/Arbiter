@@ -1,0 +1,71 @@
+{
+  "experiment_label": "EXPERIMENTAL",
+  "generated_at": "2026-10-12T15:56:49.776746+00:00",
+  "selected_model": "logistic_regression",
+  "display_name": "Logistic Regression",
+  "pipeline_file": "logistic_regression_pipeline.joblib",
+  "target": "default_flag",
+  "random_seed": 42,
+  "test_size": 0.2,
+  "split_strategy": "StratifiedShuffleSplit (train_test_split stratify=y)",
+  "cv_threshold": 0.7623,
+  "default_threshold": 0.5,
+  "feature_names": [
+    "age",
+    "gender",
+    "marital_status",
+    "city_tier",
+    "state",
+    "employment_type",
+    "bank_account_vintage_years",
+    "monthly_income_inr",
+    "existing_loans_count",
+    "existing_emi_monthly_inr",
+    "credit_utilization_ratio_pct",
+    "num_credit_inquiries_last_6m",
+    "late_payments_last_12m",
+    "loan_amount_requested_inr",
+    "loan_tenure_months",
+    "loan_purpose",
+    "collateral_provided",
+    "cibil_score",
+    "interest_rate_offered_pct"
+  ],
+  "numeric_features": [
+    "age",
+    "bank_account_vintage_years",
+    "monthly_income_inr",
+    "existing_loans_count",
+    "existing_emi_monthly_inr",
+    "credit_utilization_ratio_pct",
+    "num_credit_inquiries_last_6m",
+    "late_payments_last_12m",
+    "loan_amount_requested_inr",
+    "loan_tenure_months",
+    "cibil_score",
+    "interest_rate_offered_pct"
+  ],
+  "categorical_features": [
+    "gender",
+    "marital_status",
+    "city_tier",
+    "state",
+    "employment_type",
+    "loan_purpose",
+    "collateral_provided"
+  ],
+  "excluded_features": [
+    "applicant_id",
+    "default_risk_score"
+  ],
+  "preprocessing": {
+    "numeric": "SimpleImputer(median) + StandardScaler",
+    "categorical": "SimpleImputer(most_frequent) + OneHotEncoder(handle_unknown=ignore)"
+  },
+  "notes": [
+    "Dataset provenance is unverified; distribution suggests synthetic or stratified generation.",
+    "default_risk_score excluded due to MODERATE_LEAKAGE_SUSPECTED verdict in Stage 3A audit.",
+    "6.12% positive-class prevalence \u2014 imbalanced; models use class-weight compensation.",
+    "Do not use for real lending decisions."
+  ]
+}

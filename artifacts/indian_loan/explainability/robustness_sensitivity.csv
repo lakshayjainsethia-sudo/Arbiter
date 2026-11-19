@@ -1,0 +1,14 @@
+feature,perturbation,n_samples,mean_baseline_prob,mean_perturbed_prob,mean_delta_prob,abs_mean_delta,max_abs_delta,classification_changes,approvals_flipped_to_flag,flags_flipped_to_approval,pct_class_change,note
+cibil_score,CIBIL +50 (improvement),200,0.323,0.1779,-0.1452,0.1452,0.2562,13,0,13,6.5,Sensitivity test only — not adversarial robustness proof
+cibil_score,CIBIL -50 (deterioration),200,0.323,0.5055,0.1825,0.1825,0.2564,26,26,0,13.0,Sensitivity test only — not adversarial robustness proof
+cibil_score,CIBIL +150 (major improvement),200,0.323,0.0351,-0.2879,0.2879,0.6562,14,0,14,7.0,Sensitivity test only — not adversarial robustness proof
+monthly_income_inr,Income +25%,200,0.323,0.3027,-0.0204,0.0204,0.1577,3,0,3,1.5,Sensitivity test only — not adversarial robustness proof
+monthly_income_inr,Income -25%,200,0.323,0.3445,0.0215,0.0215,0.2061,5,5,0,2.5,Sensitivity test only — not adversarial robustness proof
+existing_emi_monthly_inr,EMI +50%,200,0.323,0.3471,0.0241,0.0241,0.4174,8,8,0,4.0,Sensitivity test only — not adversarial robustness proof
+existing_emi_monthly_inr,EMI -50%,200,0.323,0.3,-0.023,0.023,0.2575,4,0,4,2.0,Sensitivity test only — not adversarial robustness proof
+loan_amount_requested_inr,Loan amount +30%,200,0.323,0.3428,0.0198,0.0198,0.123,7,7,0,3.5,Sensitivity test only — not adversarial robustness proof
+loan_amount_requested_inr,Loan amount -30%,200,0.323,0.3039,-0.0191,0.0191,0.1154,3,0,3,1.5,Sensitivity test only — not adversarial robustness proof
+credit_utilization_ratio_pct,Credit util +20pp,200,0.323,0.3063,-0.0167,0.0167,0.0263,3,0,3,1.5,Sensitivity test only — not adversarial robustness proof
+credit_utilization_ratio_pct,Credit util -20pp,200,0.323,0.3392,0.0162,0.0162,0.0264,7,7,0,3.5,Sensitivity test only — not adversarial robustness proof
+late_payments_last_12m,Late payments +2,200,0.323,0.4046,0.0816,0.0816,0.1206,11,11,0,5.5,Sensitivity test only — not adversarial robustness proof
+late_payments_last_12m,Late payments 0 (none),200,0.323,0.2565,-0.0665,0.0665,0.2928,10,0,10,5.0,Sensitivity test only — not adversarial robustness proof

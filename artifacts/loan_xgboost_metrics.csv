@@ -1,0 +1,2 @@
+model,rows,roc_auc,pr_auc,training_time_seconds
+XGBoost,50000,0.6745150039667116,0.33878951792908535,1.6233561038970947

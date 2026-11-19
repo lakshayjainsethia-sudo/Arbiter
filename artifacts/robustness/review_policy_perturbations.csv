@@ -1,0 +1,9 @@
+feature,direction,requested_change,mean_absolute_probability_change,class_change_rate_vs_clean,review_status_change_rate_vs_clean,perturbed_review_rate,rows
+fico_n,decrease,5.0,0.014990253373980522,0.033,0.079,0.247,2000
+fico_n,increase,5.0,0.016930896788835526,0.0415,0.086,0.238,2000
+dti_n,decrease,0.5,0.007288570981472731,0.022,0.04,0.241,2000
+dti_n,increase,0.5,0.007255035452544689,0.0135,0.04,0.241,2000
+revenue,decrease,3260.0,0.008093923330307007,0.019,0.047,0.245,2000
+revenue,increase,3260.0,0.007697317749261856,0.0235,0.0385,0.2395,2000
+loan_amnt,decrease,600.0,0.009919454343616962,0.025,0.05,0.234,2000
+loan_amnt,increase,600.0,0.015443376265466213,0.0425,0.082,0.244,2000

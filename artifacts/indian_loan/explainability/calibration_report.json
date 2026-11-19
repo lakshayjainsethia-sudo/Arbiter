@@ -1,0 +1,109 @@
+{
+  "experiment_label": "EXPERIMENTAL \u2014 dataset provenance unverified",
+  "generated_at": "2026-10-12T16:23:16.478929+00:00",
+  "note": "Calibrators fitted on OOF probabilities from 5-fold cross_val_predict on the training set only. Test set was NEVER used to fit calibration. Calibrated models are exploratory and do NOT replace the selected baseline. The selected model remains logistic_regression_pipeline.joblib (uncalibrated).",
+  "calibration_method": {
+    "oof_source": "cross_val_predict(pipeline, X_train, y_train, cv=5)",
+    "platt": "LogisticRegression(C=1e6) fit on OOF probs vs y_train",
+    "isotonic": "IsotonicRegression(out_of_bounds=clip) fit on OOF probs vs y_train",
+    "test_labels_used_for_fitting": false
+  },
+  "uncalibrated": {
+    "logistic_regression": {
+      "brier_score": 0.1532
+    },
+    "random_forest": {
+      "brier_score": 0.0954
+    }
+  },
+  "calibrated": {
+    "sigmoid": {
+      "lr": {
+        "brier": 0.0475,
+        "frac_pos": [
+          0.022300175394637935,
+          0.12300683371298406,
+          0.2648221343873518,
+          0.33783783783783783,
+          0.5882352941176471
+        ],
+        "mean_pred": [
+          0.023115354107493442,
+          0.14297354071316956,
+          0.24723625020702097,
+          0.3405599015116537,
+          0.43032438799254846
+        ]
+      },
+      "rf": {
+        "brier": 0.0485,
+        "frac_pos": [
+          0.026673252654976536,
+          0.13810741687979539,
+          0.19523809523809524,
+          0.3120567375886525,
+          0.3783783783783784,
+          0.71875,
+          1.0
+        ],
+        "mean_pred": [
+          0.025592405150563845,
+          0.14495985395238678,
+          0.24534114516611477,
+          0.34343365779432977,
+          0.44703558713678204,
+          0.548379128678518,
+          0.6258267547687038
+        ]
+      }
+    },
+    "isotonic": {
+      "lr": {
+        "brier": 0.0474,
+        "frac_pos": [
+          0.02281180262831639,
+          0.13704496788008566,
+          0.3146853146853147,
+          0.29411764705882354,
+          0.4838709677419355,
+          0.25,
+          0.65,
+          0.36363636363636365,
+          0.8461538461538461
+        ],
+        "mean_pred": [
+          0.025385551850204986,
+          0.1247311325351845,
+          0.26632249066090335,
+          0.3574030279403159,
+          0.4626865671641789,
+          0.5555555555555556,
+          0.6496923076923078,
+          0.7361853832442068,
+          0.8531601226098382
+        ]
+      },
+      "rf": {
+        "brier": 0.0484,
+        "frac_pos": [
+          0.02669962917181706,
+          0.1308411214953271,
+          0.2397003745318352,
+          0.3870967741935484,
+          0.43902439024390244,
+          0.7083333333333334,
+          1.0
+        ],
+        "mean_pred": [
+          0.027001936458606615,
+          0.1425023328531372,
+          0.2582929735412584,
+          0.36847979611084436,
+          0.5191256830601093,
+          0.7906976744186046,
+          1.0
+        ]
+      }
+    }
+  }
+}

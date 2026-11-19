@@ -1,0 +1,2 @@
+scenario,roc_auc,pr_auc,default_precision,default_recall,default_f1,positive_predictions
+clean_baseline,0.6744322974755567,0.34028085887059734,0.29911462072266093,0.6121449559255632,0.4018646519852114,4179

@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-10-12T16:22:32.352993+00:00",
+  "experiment_label": "EXPERIMENTAL \u2014 dataset provenance unverified",
+  "checks": {
+    "identical_split": {
+      "random_seed": 42,
+      "test_size": 0.2,
+      "split_strategy": "stratified",
+      "reproduced_train_rows": 19594,
+      "reproduced_test_rows": 4899,
+      "reported_train_rows": 19594,
+      "reported_test_rows": 4899,
+      "match": true,
+      "verdict": "PASS"
+    },
+    "metric_reproducibility": {
+      "recomputed": {
+        "roc_auc": 0.8551,
+        "pr_auc": 0.3555,
+        "brier": 0.1532,
+        "precision": 0.3423,
+        "recall": 0.5067,
+        "f1": 0.4086,
+        "confusion_matrix": [
+          [
+            4307,
+            292
+          ],
+          [
+            148,
+            152
+          ]
+        ]
+      },
+      "saved": {
+        "roc_auc": 0.8551,
+        "pr_auc": 0.3555,
+        "brier": 0.1532,
+        "precision": 0.3423,
+        "recall": 0.5067,
+        "f1": 0.4086,
+        "confusion_matrix": [
+          [
+            4307,
+            292
+          ],
+          [
+            148,
+            152
+          ]
+        ]
+      },
+      "tolerance": 0.001,
+      "verdict": "PASS"
+    },
+    "threshold_selection_integrity": {
+      "method": "OOF cross-validation on training set (5-fold StratifiedKFold)",
+      "note": "Test set was never used for threshold selection",
+      "verdict": "PASS \u2014 threshold selected on OOF CV probabilities, test labels never accessed"
+    },
+    "feature_exclusions": {
+      "excluded_columns": [
+        "applicant_id",
+        "default_risk_score"
+      ],
+      "excluded_present_in_features": false,
+      "verdict": "PASS"
+    },
+    "dataset_provenance": {
+      "status": "UNVERIFIED",
+      "observations": [
+        "All 15 Indian states have near-equal representation (~6.5-7%) \u2014 consistent with synthetic/stratified generation.",
+        "No accompanying data dictionary or README confirms real-world origin.",
+        "default_risk_score formula undocumented \u2014 excluded from features (MODERATE_LEAKAGE_SUSPECTED).",
+        "Results must not be used for real lending decisions."
+      ],
+      "verdict": "CAVEAT_MAINTAINED"
+    }
+  },
+  "overall_verdict": "PASS"
+}

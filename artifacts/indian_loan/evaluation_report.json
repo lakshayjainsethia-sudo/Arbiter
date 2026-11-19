@@ -1,0 +1,262 @@
+{
+  "experiment_label": "EXPERIMENTAL \u2014 dataset provenance unverified",
+  "generated_at": "2026-10-12T15:56:49.766993+00:00",
+  "dataset": {
+    "path": "C:\\Users\\jainm\\OneDrive\\Desktop\\Arbiter\\data\\raw\\indian_loan\\Cleaned_Dataset.csv",
+    "total_rows": 24493,
+    "train_rows": 19594,
+    "test_rows": 4899,
+    "random_seed": 42,
+    "test_size": 0.2,
+    "split_strategy": "stratified",
+    "test_positives": 300,
+    "test_prevalence": 0.0612
+  },
+  "features": {
+    "target": "default_flag",
+    "excluded": [
+      "applicant_id",
+      "default_risk_score"
+    ],
+    "exclusion_reason": {
+      "applicant_id": "Identifier \u2014 never a feature",
+      "default_risk_score": "Unverified provenance, MODERATE_LEAKAGE_SUSPECTED"
+    },
+    "baseline_features": [
+      "age",
+      "gender",
+      "marital_status",
+      "city_tier",
+      "state",
+      "employment_type",
+      "bank_account_vintage_years",
+      "monthly_income_inr",
+      "existing_loans_count",
+      "existing_emi_monthly_inr",
+      "credit_utilization_ratio_pct",
+      "num_credit_inquiries_last_6m",
+      "late_payments_last_12m",
+      "loan_amount_requested_inr",
+      "loan_tenure_months",
+      "loan_purpose",
+      "collateral_provided",
+      "cibil_score",
+      "interest_rate_offered_pct"
+    ],
+    "numeric_features": [
+      "age",
+      "bank_account_vintage_years",
+      "monthly_income_inr",
+      "existing_loans_count",
+      "existing_emi_monthly_inr",
+      "credit_utilization_ratio_pct",
+      "num_credit_inquiries_last_6m",
+      "late_payments_last_12m",
+      "loan_amount_requested_inr",
+      "loan_tenure_months",
+      "cibil_score",
+      "interest_rate_offered_pct"
+    ],
+    "categorical_features": [
+      "gender",
+      "marital_status",
+      "city_tier",
+      "state",
+      "employment_type",
+      "loan_purpose",
+      "collateral_provided"
+    ],
+    "n_features": 19
+  },
+  "threshold_selection": {
+    "method": "OOF cross-validation on training set (5-fold StratifiedKFold)",
+    "criterion": "maximise F1 on OOF probabilities",
+    "note": "Test set was never used for threshold selection"
+  },
+  "models": {
+    "logistic_regression": {
+      "display_name": "Logistic Regression",
+      "cv_threshold": 0.7623,
+      "at_cv_threshold": {
+        "threshold": 0.7623,
+        "roc_auc": 0.8551,
+        "pr_auc": 0.3555,
+        "brier_score": 0.1532,
+        "precision": 0.3423,
+        "recall": 0.5067,
+        "f1": 0.4086,
+        "confusion_matrix": [
+          [
+            4307,
+            292
+          ],
+          [
+            148,
+            152
+          ]
+        ],
+        "tp": 152,
+        "fp": 292,
+        "tn": 4307,
+        "fn": 148
+      },
+      "at_0_50": {
+        "threshold": 0.5,
+        "roc_auc": 0.8551,
+        "pr_auc": 0.3555,
+        "brier_score": 0.1532,
+        "precision": 0.1857,
+        "recall": 0.78,
+        "f1": 0.3,
+        "confusion_matrix": [
+          [
+            3573,
+            1026
+          ],
+          [
+            66,
+            234
+          ]
+        ],
+        "tp": 234,
+        "fp": 1026,
+        "tn": 3573,
+        "fn": 66
+      },
+      "fit_time_s": 0.33,
+      "cv_time_s": 3.68
+    },
+    "random_forest": {
+      "display_name": "Random Forest",
+      "cv_threshold": 0.5965,
+      "at_cv_threshold": {
+        "threshold": 0.5965,
+        "roc_auc": 0.8457,
+        "pr_auc": 0.3382,
+        "brier_score": 0.0954,
+        "precision": 0.326,
+        "recall": 0.4467,
+        "f1": 0.3769,
+        "confusion_matrix": [
+          [
+            4322,
+            277
+          ],
+          [
+            166,
+            134
+          ]
+        ],
+        "tp": 134,
+        "fp": 277,
+        "tn": 4322,
+        "fn": 166
+      },
+      "at_0_50": {
+        "threshold": 0.5,
+        "roc_auc": 0.8457,
+        "pr_auc": 0.3382,
+        "brier_score": 0.0954,
+        "precision": 0.2515,
+        "recall": 0.5633,
+        "f1": 0.3477,
+        "confusion_matrix": [
+          [
+            4096,
+            503
+          ],
+          [
+            131,
+            169
+          ]
+        ],
+        "tp": 169,
+        "fp": 503,
+        "tn": 4096,
+        "fn": 131
+      },
+      "fit_time_s": 3.59,
+      "cv_time_s": 18.72
+    },
+    "xgboost": {
+      "display_name": "XGBoost",
+      "cv_threshold": 0.6907,
+      "at_cv_threshold": {
+        "threshold": 0.6907,
+        "roc_auc": 0.8419,
+        "pr_auc": 0.3332,
+        "brier_score": 0.1066,
+        "precision": 0.331,
+        "recall": 0.4767,
+        "f1": 0.3907,
+        "confusion_matrix": [
+          [
+            4310,
+            289
+          ],
+          [
+            157,
+            143
+          ]
+        ],
+        "tp": 143,
+        "fp": 289,
+        "tn": 4310,
+        "fn": 157
+      },
+      "at_0_50": {
+        "threshold": 0.5,
+        "roc_auc": 0.8419,
+        "pr_auc": 0.3332,
+        "brier_score": 0.1066,
+        "precision": 0.2311,
+        "recall": 0.6533,
+        "f1": 0.3415,
+        "confusion_matrix": [
+          [
+            3947,
+            652
+          ],
+          [
+            104,
+            196
+          ]
+        ],
+        "tp": 196,
+        "fp": 652,
+        "tn": 3947,
+        "fn": 104
+      },
+      "fit_time_s": 18.71,
+      "cv_time_s": 34.82
+    }
+  },
+  "selected_model": {
+    "name": "logistic_regression",
+    "display_name": "Logistic Regression",
+    "selection_criteria": "Highest PR-AUC (primary), ROC-AUC (secondary), F1 (tertiary)",
+    "metrics_at_cv_threshold": {
+      "threshold": 0.7623,
+      "roc_auc": 0.8551,
+      "pr_auc": 0.3555,
+      "brier_score": 0.1532,
+      "precision": 0.3423,
+      "recall": 0.5067,
+      "f1": 0.4086,
+      "confusion_matrix": [
+        [
+          4307,
+          292
+        ],
+        [
+          148,
+          152
+        ]
+      ],
+      "tp": 152,
+      "fp": 292,
+      "tn": 4307,
+      "fn": 148
+    }
+  }
+}

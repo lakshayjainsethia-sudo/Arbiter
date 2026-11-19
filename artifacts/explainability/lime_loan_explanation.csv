@@ -1,0 +1,11 @@
+feature_condition,lime_weight
+numeric__fico_n <= 672.00,0.11691340047004879
+categorical__addr_state_WV <= 0.00,0.11581117947449222
+categorical__addr_state_OR <= 0.00,0.09725689831554611
+numeric__dti_n <= 12.06,-0.09218517200931411
+categorical__addr_state_AR <= 0.00,-0.09092287091516905
+categorical__addr_state_SC <= 0.00,0.08327290666009197
+categorical__addr_state_AL <= 0.00,-0.07511672494828908
+categorical__purpose_moving <= 0.00,0.0745654398309682
+categorical__purpose_credit_card <= 0.00,0.06971840554241586
+categorical__purpose_vacation <= 0.00,-0.055131424619470605

@@ -1,0 +1,145 @@
+{
+  "generated_at": "2026-10-12T15:49:23.821859+00:00",
+  "shape": {
+    "rows": 24493,
+    "cols": 22
+  },
+  "columns": [
+    "applicant_id",
+    "age",
+    "gender",
+    "marital_status",
+    "city_tier",
+    "state",
+    "employment_type",
+    "bank_account_vintage_years",
+    "monthly_income_inr",
+    "existing_loans_count",
+    "existing_emi_monthly_inr",
+    "credit_utilization_ratio_pct",
+    "num_credit_inquiries_last_6m",
+    "late_payments_last_12m",
+    "loan_amount_requested_inr",
+    "loan_tenure_months",
+    "loan_purpose",
+    "collateral_provided",
+    "cibil_score",
+    "interest_rate_offered_pct",
+    "default_risk_score",
+    "default_flag"
+  ],
+  "target": {
+    "column": "default_flag",
+    "distribution": {
+      "0": 22993,
+      "1": 1500
+    }
+  },
+  "missing": {
+    "total_null_cells": 0,
+    "columns_with_nulls": {}
+  },
+  "applicant_id": {
+    "duplicate_count": 0,
+    "null_count": 0
+  },
+  "duplicate_rows": 0,
+  "default_risk_score": {
+    "pearson_corr_with_target": 0.4854,
+    "spearman_corr_with_target": 0.3174,
+    "leakage_verdict": "MODERATE_LEAKAGE_SUSPECTED"
+  },
+  "impossible_values": {
+    "issues": []
+  },
+  "categorical_distributions": {
+    "gender": {
+      "Male": 14616,
+      "Female": 9404,
+      "Other": 473
+    },
+    "marital_status": {
+      "Married": 14251,
+      "Single": 7757,
+      "Divorced": 1493,
+      "Widowed": 992
+    },
+    "city_tier": {
+      "Tier 1": 9760,
+      "Tier 2": 9332,
+      "Tier 3": 5401
+    },
+    "state": {
+      "Gujarat": 1719,
+      "Tamil Nadu": 1701,
+      "Andhra Pradesh": 1696,
+      "Rajasthan": 1692,
+      "Kerala": 1666,
+      "Telangana": 1646,
+      "Uttar Pradesh": 1634,
+      "Karnataka": 1631,
+      "Madhya Pradesh": 1614,
+      "West Bengal": 1606,
+      "Maharashtra": 1596,
+      "Bihar": 1593,
+      "Delhi NCR": 1582,
+      "Punjab": 1565,
+      "Haryana": 1552
+    },
+    "employment_type": {
+      "Salaried - Private": 11023,
+      "Salaried - Government": 3733,
+      "Self-Employed Professional": 3671,
+      "Business Owner": 3627,
+      "Salaried - PSU": 2439
+    },
+    "loan_purpose": {
+      "Personal Expense": 5487,
+      "Wedding": 3393,
+      "Home Renovation": 3231,
+      "Medical Emergency": 3174,
+      "Vehicle Purchase": 2423,
+      "Debt Consolidation": 2418,
+      "Education": 2396,
+      "Business Expansion": 1971
+    },
+    "collateral_provided": {
+      "No": 19142,
+      "Yes": 5351
+    }
+  },
+  "perfect_relationships": [],
+  "exclusions": [
+    {
+      "column": "applicant_id",
+      "reason": "Identifier \u2014 must never be a feature"
+    },
+    {
+      "column": "default_risk_score",
+      "reason": "Unverified provenance / likely post-loan leakage risk"
+    }
+  ],
+  "proposed_features": [
+    "age",
+    "gender",
+    "marital_status",
+    "city_tier",
+    "state",
+    "employment_type",
+    "bank_account_vintage_years",
+    "monthly_income_inr",
+    "existing_loans_count",
+    "existing_emi_monthly_inr",
+    "credit_utilization_ratio_pct",
+    "num_credit_inquiries_last_6m",
+    "late_payments_last_12m",
+    "loan_amount_requested_inr",
+    "loan_tenure_months",
+    "loan_purpose",
+    "collateral_provided",
+    "cibil_score",
+    "interest_rate_offered_pct"
+  ],
+  "verdict": "PASS \u2014 No critical issues detected. Dataset is conditionally suitable for experimental baseline.",
+  "issues": []
+}
